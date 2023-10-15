@@ -1,5 +1,6 @@
 
 //import java.util.Locale;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class PlanoOperadora {
@@ -21,9 +22,9 @@ public class PlanoOperadora {
             System.out.println("ERRO!!!");
         }
 
-      //  nomePlano = (plano == "B") ? "BASIC: "
-       //         : (plano == "M") ? "MIDIA: " : (plano == "T") ? "TURBO: " : "Escolha B, M ou T.";
-      //  System.out.println(nomePlano);
+        nomePlano = (Objects.equals(plano,"B")) ? "BASIC: "
+               : (Objects.equals(plano,"M")) ? "MIDIA: " : (Objects.equals(plano, "T")) ? "TURBO: " : "Escolha B, M ou T.";
+        System.out.println(nomePlano);
 
         switch (plano) {
             case "T": {

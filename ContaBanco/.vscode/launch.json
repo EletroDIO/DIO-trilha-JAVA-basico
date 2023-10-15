@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Contador",
+            "request": "launch",
+            "mainClass": "Contador",
+            "projectName": "ContaBanco_f5960ea"
+        },
+        {
+            "type": "java",
+            "name": "NumerosAleatorios",
+            "request": "launch",
+            "mainClass": "NumerosAleatorios",
+            "projectName": "ContaBanco_f5960ea"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
