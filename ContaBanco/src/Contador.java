@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Contador {
 
+    static int um;
+    static int dois;
+
     public static void main(String[] args) throws ParametrosInvalidosException {
 
         try {
@@ -33,8 +36,8 @@ public class Contador {
     }
 
     static int digitarUm() {
+
         Scanner terminalUm = new Scanner(System.in);
-        int um = 0;
         System.out.println("Digite o primeiro parâmetro:");
         try {
             um = terminalUm.nextInt();
@@ -42,15 +45,14 @@ public class Contador {
             System.out.println("O parãmetro precisa ser um numero.");
             System.out.println(" ");
             digitarUm();
-        } finally {
-            terminalUm.nextLine();
-        }
+        } 
+
         return um;
     }
 
     static int digitarDois() {
+
         Scanner terminalDois = new Scanner(System.in);
-        int dois = 0;
         System.out.println("Digite o segundo parâmetro:");
         try {
             dois = terminalDois.nextInt();
@@ -58,9 +60,8 @@ public class Contador {
             System.out.println("O parãmetro precisa ser um numero.");
             System.out.println(" ");
             digitarDois();
-        } finally {
-            terminalDois.nextLine();
-        }
+        } 
+        
         return dois;
     }
 }
