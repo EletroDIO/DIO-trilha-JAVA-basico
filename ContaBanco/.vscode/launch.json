@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DescontoImposto",
+            "request": "launch",
+            "mainClass": "DescontoImposto",
+            "projectName": "ContaBanco_f5960ea"
+        },
+        {
+            "type": "java",
             "name": "Contador",
             "request": "launch",
             "mainClass": "Contador",

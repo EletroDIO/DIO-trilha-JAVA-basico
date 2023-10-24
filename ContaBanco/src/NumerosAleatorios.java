@@ -15,7 +15,8 @@ public class NumerosAleatorios {
                 numero = aleatorio * 100;
 
                 System.out.println(Double.toString(numero).substring(0, 7));
-
+                System.out.println(String.format("%.2f", numero));
+                System.out.println(" ");
                 i++;
             }
         }

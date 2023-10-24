@@ -17,12 +17,12 @@ public class ContaTerminal {
             System.out.println("Boa Noite");
         }
 
-        System.out.println("Data/Hora atual: "+ relogio.getTime());
+        System.out.println("Data/Hora atual: " + relogio.getTime());
 
         try (Scanner scanner = new Scanner(System.in).useLocale(Locale.US)) {
 
             int numero = 1021;
-            double saldo = 237.48;
+            double saldo = 0;
 
             System.out.println("Por favor, digite seu nome completo: ");
             String nomeCliente = scanner.next();
@@ -36,10 +36,19 @@ public class ContaTerminal {
             System.out.println("Olá " + nomeCliente + ", ");
             System.out.println("obrigado por abrir uma conta em nosso banco, ");
             System.out.println("sua agência: " + agencia + " / conta n°: " + numero + " e ");
-            System.out.println("seu saldo: R$ " + saldo + ", já está disponível para saque. ");
-      
-        } catch(InputMismatchException e) {
-           
+            System.out.println("seu saldo: R$ " + String.format("%.2f", saldo) + " já está disponível para saque. ");
+
+            double saldoAtual = saldo;
+            System.out.println("Digite o valor do deposito: ");
+            double valorDeposito = scanner.nextDouble();
+            System.out.println("Digite um valor para saque: ");
+            double valorRetirada = scanner.nextDouble();
+
+            saldoAtual = saldoAtual + valorDeposito - valorRetirada;
+            System.out.println("Saldo atualizado na conta: " + String.format("%.2f", saldoAtual));
+
+        } catch (InputMismatchException e) {
+
             System.out.println("Digite os valores corretamente.");
         }
 
