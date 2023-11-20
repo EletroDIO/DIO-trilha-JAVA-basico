@@ -41,13 +41,14 @@ public class Contador {
         System.out.println("Digite o primeiro parâmetro:");
         try {
             um = terminalUm.nextInt();
-          
+           // terminalUm.nextLine();
+
         } catch (Exception e) {
             System.out.println("O parâmetro precisa ser um numero.");
             System.out.println(" ");
             digitarUm();
         } 
-        
+       // terminalUm.close();
         return um;
     }
 
@@ -57,13 +58,14 @@ public class Contador {
         System.out.println("Digite o segundo parâmetro:");
         try {
             dois = terminalDois.nextInt();
+         //   terminalDois.nextLine();
 
         } catch (Exception e) {
             System.out.println("O parâmetro precisa ser um numero.");
             System.out.println(" ");
             digitarDois();
         } 
-        
+      //  terminalDois.close();
         return dois;
     }
 

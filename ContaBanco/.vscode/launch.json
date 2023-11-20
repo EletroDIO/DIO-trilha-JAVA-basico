@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BancoApp",
+            "request": "launch",
+            "mainClass": "BancoApp",
+            "projectName": "ContaBanco_f5960ea"
+        },
+        {
+            "type": "java",
+            "name": "OrdemAlfabetica",
+            "request": "launch",
+            "mainClass": "OrdemAlfabetica",
+            "projectName": "ContaBanco_f5960ea"
+        },
+        {
+            "type": "java",
             "name": "DescontoImposto",
             "request": "launch",
             "mainClass": "DescontoImposto",

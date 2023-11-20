@@ -45,7 +45,12 @@ public class ContaTerminal {
             double valorRetirada = scanner.nextDouble();
 
             saldoAtual = saldoAtual + valorDeposito - valorRetirada;
-            System.out.println("Saldo atualizado na conta: " + String.format("%.2f", saldoAtual));
+            if (saldoAtual >= 0) {
+                System.out.println("Saque realizado com sucesso! ");
+                System.out.println("Saldo atualizado na conta: " + String.format("%.2f", saldoAtual));
+            } else {
+                System.out.println("Saldo insuficiente. Saque nao realizado!");
+            }
 
         } catch (InputMismatchException e) {
 
